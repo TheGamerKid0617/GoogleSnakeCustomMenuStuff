@@ -43,7 +43,7 @@ window.snake.more_menu = function(e) {
   img.height = 47;
   document.querySelector('#size').appendChild(img);
 
-  // too big
+  // way too big
   img = new Image;
   img.src = 'https://github.com/carlgustavh/GoogleSnakeCustomMenuStuffImages/blob/main/Way%20Too%20Big.png?raw=true';
   img.width = 47;
@@ -552,7 +552,7 @@ window.snake.more_menu = function(e) {
           /[a-zA-Z0-9_$]{1,6}=function\(a\){switch\(a\.[a-zA-Z0-9_$]{1,6}\){case 2:return 512;[^]*?256}}/
         )[0].replace(
           '96;',
-          `96;case 3:return ${e};case 4:return 48;case 5:return 1200;case 6:return 3500;case 7:return 10000;case 8:return 25000;case 9:return 100000;`
+          `96;case 3:return ${e};case 4:return 48;case 5:return 1200;case 6:return 3500;case 7:return 10000;case 8:return 25000;case 9:return 1;//100000`
         )
       );
     };
